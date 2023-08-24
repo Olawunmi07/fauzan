@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(6, 31, 31);
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgb(6, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar li a:hover{
+    color: #11101b;
+    background: whitesmoke;
+}
+.nav-bar li a.active{
+    color: #11101b;
+    background: whitesmoke;
+}
+@media only screen and (max-width: 1320px) {
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: whitesmoke;
+        margin: 6px 0px;
+    }
+    /* .nav-bar{
+        display: none;
+    } */
+    .nav-bar{
+        position: absolute;
+        height: 0;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 5s;
+        opacity: 0;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+       
+    }
+}
+
+.login{
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+    margin-left: 35%;
+    background: darkcyan;
+    color: black;
+    /* border: px solid #333; */
+    box-shadow: 10px;
+    
+}
+button{
+    border-radius: 30px;
+    height: 40px;
+    width: 66px;
+    font-weight: bold;
+    background: cyan;
+}
+.login:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-out 0.2s;
+}
+.y{
+    margin-top: 15px;
+    margin-left: 65px;
+}
+input{
+    margin-left: 2px;
+    border-radius: 20px;
+}
+input:hover{
+    transform: translateX(-10px);
+    transition: transform 0.5s ease-out 0.2s;
+}
+.l{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+button:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-out 0.2s;
+    color: cyan;
+    background: black;
+}
+.s{
+    margin-left: 43%;
+    margin-top: 30px;
+}
+
